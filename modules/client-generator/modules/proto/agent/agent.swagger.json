@@ -4,6 +4,11 @@
     "title": "agent/service.proto",
     "version": "version not set"
   },
+  "host": "agent.api.gogemini.io",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
   "tags": [
     {
       "name": "Agent"
