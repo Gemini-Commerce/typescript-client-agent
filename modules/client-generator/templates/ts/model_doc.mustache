@@ -1,0 +1,26 @@
+# {{#models}}{{#model}}# {{classname}}
+{{description}}
+
+## Properties 
+
+{{^isEnum}}
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+{{#vars}}**{{name}}**| {{#isPrimitiveType}}**{{{dataType}}}**{{/isPrimitiveType}}{{^isPrimitiveType}}[**{{{dataType}}}**]({{complexType}}.md){{/isPrimitiveType}} | {{description}} {{#allowableValues.enumVars.0}}for more information please, see Model/{{baseType}}.php {{/allowableValues.enumVars.0}} |{{^required}} [optional]{{/required}}{{#isReadOnly}} [readonly]{{/isReadOnly}}{{#defaultValue}} [default to {{{.}}}]{{/defaultValue}}
+{{/vars}}
+{{/isEnum}}
+
+{{#isEnum}}
+
+| Value |
+------------ | 
+{{#allowableValues}}
+{{#enumVars}}
+{{name}}|{{value}}
+{{/enumVars}}
+{{/allowableValues}}
+{{/isEnum}}
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md){{/model}}{{/models}}
+
