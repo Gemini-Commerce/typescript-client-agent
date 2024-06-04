@@ -12,18 +12,7 @@
  * Do not edit the class manually.
  */
 
-/**
- * 
- * @export
- * @interface ProtobufAny
- */
-export interface ProtobufAny {
-    [key: string]: any;
 
-    /**
-     * 
-     * @type {string}
-     * @memberof ProtobufAny
-     */
-    '@type'?: string;
-}
+export * from "./api";
+export * from "./configuration";
+
